@@ -37,15 +37,15 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Je opdracht:
   link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  https://www.viviennewestwood.com/en/ 
+  https://www.chanel.com/nl/
 
   #### Screenshot(s) van de eerste pagina (small screen): 
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-platje.jpg" width="375px" alt="omschrijving van de pagina">
+  home pagina
+  <img src="readme-images/homepagechanel.jpg" width="375px" alt="omschrijving van de pagina">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  hier de naam van de pagina  
-  <img src="readme-images/dummy-plaaje.jpg" width="375px" alt="omschrijving van de pagina">
+  login pagina 
+  <img src="readme-images/loginpagechanel.jpg" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
