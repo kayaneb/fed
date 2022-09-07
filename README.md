@@ -80,9 +80,9 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  <img src="readme-images/IMG_6661.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/IMG_6661.HEIC" width="375px" alt="breakdown van de hele pagina">
   alles had een gele gloed
-  <img src="readme-images/IMG_6663.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/IMG_6663.HEIC" width="375px" alt="breakdown van de hele pagina">
   een zwarte vlek in je zicht. je kon een deel niet zien.
   
   Hier korte omschrijving (met indien nodig afbeeldingen)
