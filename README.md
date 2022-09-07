@@ -62,7 +62,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
-  De screenreader leest niet alles voor en de foto's werden niet beschreven.
+  De screenreader leest niet alles voor, bijv niet de header en de foto's werden niet beschreven.
   
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat je ziet
