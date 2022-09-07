@@ -58,12 +58,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 
   ### Bevindingen
   Lijst met je bevindingen die in de test naar voren kwamen:
+  de voiceover las niet alles voor.
 
   #### Screenreader
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  De screenreader leest niet alles voor en de foto's werden niet beschreven.
+  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
+kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat je ziet
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
