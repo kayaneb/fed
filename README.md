@@ -189,7 +189,7 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
 
   #### Screenreader
   leest alleen de buttons en linkjes voor
- 
+ <img src="readme-imagesIMG_7062.HEIC" width="375px"
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
