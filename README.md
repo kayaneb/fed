@@ -188,8 +188,8 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
+  zegt alleen de buttons 
+ 
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
