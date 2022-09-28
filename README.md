@@ -188,14 +188,14 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  leest alleen de buttons en linkjes voor
+  leest alleen de buttons en linkjes voor als je de tab gebruikt. het leest alles voor als je het selecteerd
  <img src="readme-imagesIMG_7062.HEIC" width="375px">
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
   #### Muis en Toetsenbord 
   Hier korte omschrijving (met indien nodig afbeeldingen)
-
+Leest alleen de buttons en linkjes voor
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 
