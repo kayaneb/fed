@@ -188,7 +188,7 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
 
   #### Screenreader
-  zegt alleen de buttons 
+  leest alleen de buttons en linkjes voor
  
   Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
