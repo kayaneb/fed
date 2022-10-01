@@ -108,9 +108,12 @@ display: flex;
 
 @media (max-width: 100px){
 	nav img {
-		padding-left: 60px;
+		padding-left: 0px;
 	}
 }
+
+
+
 
 
 nav ul li img {
@@ -130,12 +133,13 @@ main section {
   }
 
 main section img {
-	height: 30.25em;
+	width: 1460px;
     margin-top: 3.125em;
     margin-bottom: 3.125em;
     background-size: cover;
+	max-width: 100%;
+	position: relative;
 }
-
 
 main section h2 {
 	text-align: center;
@@ -177,9 +181,8 @@ main section a:hover {
 
 footer {
 	background-color: #000000;
-	margin-bottom: 20px;
-	min-width: 20px;
-	margin-bottom: 10px;
+	min-width: 1.25em;
+    margin-bottom: 1.25em;
 	flex-basis: 30%;
 	text-align: center;
 }
@@ -203,3 +206,4 @@ h4 {
 p {
 	color: white;
 }
+
