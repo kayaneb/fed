@@ -16,7 +16,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
-  Sanne 't Hooft (vervangen door jouw naam)
+ Kayane Bouizem
 
   #### Je startniveau:
   blauw
@@ -61,10 +61,9 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   de voiceover las niet alles voor.
 
   #### Screenreader
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-  De screenreader leest niet alles voor, bijv niet de header en de foto's werden niet beschreven.
+
+ De screenreader leest niet alles voor, bijv niet de header en de foto's werden niet beschreven.
   
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat je ziet
 
   #### Muis en Toetsenbord 
