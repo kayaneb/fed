@@ -79,9 +79,9 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   
 
   #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  <img src="readme-images/IMG_6661.HEIC" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/IMG_6661.HEIC" width="375px" alt="kleurenblind">
   alles had een gele gloed
-  <img src="readme-images/IMG_6663.HEIC" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/IMG_6663.HEIC" width="375px" alt="beperktzicht ">
   een zwarte vlek in je zicht. je kon een deel niet zien.
   
   Hier korte omschrijving (met indien nodig afbeeldingen)
@@ -98,13 +98,13 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van de hele pagina">
+  <img src="readme-images/">
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van een dynamisch deel">
+  <img src="readme-images/">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="breakdown van nog een dynamisch deel">
+  <img src="readme-images/">
 
 </details>
 
@@ -124,19 +124,18 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Lisa           | Laura              | Sander            | Kayane           |
+  | ---            | ---                | ---               | ---              |
+  | nav bar        | 3 buttons stijl    | Margin en padding | Hamburger menu   |
+  | css paginas    | haai met nummers   | Semantisch correct| Javascript       |
+  | ...            | ...                | ...               | ...              |
 
 
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - Display none gebuikt waardoor hamburger menu niet werkte
+  - 3 css paginas, 1 algemene pagina
   - ...
 
 </details>
