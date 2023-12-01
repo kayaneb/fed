@@ -156,11 +156,11 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
-  | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-  | ...            | ...                | ...          | ...              |
+  | Lisa           | Laura              | Sander            | Kayane           |
+  | ---            | ---                | ---               | ---              |
+  | animatie       | achtergrond en     |......             | selectoren       |
+  | slide bar in   | afbeeldingen bij h1| .....             | header           |
+  | loop aangeven  | inframe stylen     | ...               | ...              |
 
 
   ### Verslag van meeting
