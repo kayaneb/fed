@@ -1,0 +1,45 @@
+:root {
+    --color-text: #111;
+    --color-background: rgb(255, 255, 255);
+  
+    --color-link: #000000;
+    --color-link-hover: #414141;
+    --color-link-focus: #5e5e5e;
+  
+    --font-size-h2: 20px;
+    --font-size-h3: 30px;
+    --font-size-h4: 20px;
+    --font-size-p: 16px;
+
+    --color-h4: #f8f8f8;
+    --color-p: #f8f8f8; 
+    --color-h3: #f8f8f8; 
+    --color-h2: #f8f8f8; 
+
+  }
+  
+  body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+    font-family: 'Alegreya Sans SC', sans-serif;
+  }
+  
+  h2 {
+    font-size: var(--font-size-h2);
+  }
+  
+  h3 {
+    font-size: var(--font-size-h3);
+  }
+  
+  h4 {
+    font-size: var(--font-size-h4);
+    color: var(--color-h4); 
+  }
+  
+  p {
+    font-size: var(--font-size-p);
+    color: var(--color-p); 
+  }
+  
+  
