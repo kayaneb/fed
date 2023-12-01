@@ -158,8 +158,8 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
 
   | Lisa           | Laura              | Sander            | Kayane           |
   | ---            | ---                | ---               | ---              |
-  | animatie       | achtergrond en     |......             | selectoren       |
-  | slide bar in   | afbeeldingen bij h1| .....             | header           |
+  | animatie       | achtergrond en     | .....             | selectoren       |
+  | slide bar in   | afbeeldingen bij h1| .....             | footer           |
   | loop aangeven  | inframe stylen     | ...               | ...              |
 
 
