@@ -1,0 +1,318 @@
+
+:root {
+    --color-text: #111;
+    --color-background: #f8f8f8;
+  
+    --color-link: #000000;
+    --color-link-hover: #414141;
+    --color-link-focus: #5e5e5e;
+  
+   
+    --font-size-h2: 1.25em; 
+    --font-size-h3: 1.875em; 
+    --font-size-h4: 1.25em;
+    --font-size-p: 1em; 
+
+    --color-h4: #f8f8f8;
+    --color-p: #000000; 
+    --color-h3: #f8f8f8; 
+    --color-h2: #f8f8f8; 
+    --border-bottom: #000; 
+    --span-color: #000;
+    --footer-color: #000;
+    --background-focus: #5e5e5e;
+
+  
+  }
+
+/* bron slider https://www.codingnepalweb.com/responsive-image-slider-html-css-javascript/ */
+  .container {
+    max-width: 1200px;
+    width: 95%;
+  }
+  
+  .slider-wrapper {
+    position: relative;
+  }
+  
+  .slider-wrapper .slide-button {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 1.5em;
+    width: 1.5em;
+    z-index: 5;
+    color: var(--color-background);
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: var(--footer-color);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-wrapper .slide-button:visited {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 1.5em;
+    width: 1.5em;
+    z-index: 5;
+    color:var(--color-background);
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: var(--color-link-hover);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-wrapper .slide-button:hover {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 1.5em;
+    width: 1.5em;
+    z-index: 5;
+    color: var(--color-p);
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background: var(--color-background);
+    box-shadow: 0.125em 0.125em 0.125em  #1a1919;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-wrapper .slide-button:active {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 1.7em;
+    width: 1.7em;
+    transition: ease-in-out;
+    z-index: 5;
+    color: var(--color-text);
+    display: flex;
+    cursor: pointer;
+    font-size: 2.2rem;
+    background:var(--color-background);
+    box-shadow: 0.125em 0.125em 0.125em  #1a1919;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  .slider-wrapper .slide-button:focus {
+    position: absolute;
+    top: 50%;
+    outline: none;
+    border: none;
+    height: 1.6em;
+    width: 1.6em;
+    z-index: 5;
+    color: var(--color-background);
+    display: flex;
+    cursor: pointer;
+    font-size: 2.5rem;
+    background: var(--border-bottom);
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transform: translateY(-50%);
+  }
+  
+  
+  /* .slider-wrapper .slide-button#prev-slide {
+    left: -10px;
+    display: none;
+  } */
+  
+  .slider-wrapper .slide-button#next-slide {
+    right: 0.1em;
+  }
+  
+  .slider-wrapper .image-list {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 1.125em;
+    font-size: 0;
+    list-style: none;
+    margin-bottom: 1.875em;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+  
+  .slider-wrapper .image-list::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .slider-wrapper .image-list .image-item {
+    width: 325px;
+    object-fit: cover;
+  }
+  
+  .container .slider-scrollbar {
+    height: 1.5em;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .slider-scrollbar .scrollbar-track {
+    background: #ccc;
+    width: 100%;
+    height: 0.125em;
+    display: flex;
+    align-items: center;
+    border-radius: 0.25em;
+    position: relative;
+  }
+  
+  .slider-scrollbar:hover .scrollbar-track {
+    height: 0.25em;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb {
+    position: absolute;
+    background: var(--border-bottom);
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    cursor: grab;
+    border-radius: inherit;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb:active {
+    cursor: grabbing;
+    height: 0.5em;
+    top: -0.125em;
+  }
+  
+  .slider-scrollbar .scrollbar-thumb::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -0.625em;
+    bottom: -0.625em;
+  }
+  
+
+
+
+/* Styles for mobile and tablets */
+@media only screen and (max-width: 1023px) {
+
+.slider-wrapper .image-list .image-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.slider-wrapper .image-list .image-item .image-link {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.slider-wrapper .image-list .image-item .image-img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.slider-wrapper .image-list .image-item .image-caption  {
+    position: absolute;
+    bottom: 3em;
+    left: 0;
+    right: 0;
+    color: var(--color-text);
+    padding: 0.938em 1.563em;
+    margin: auto; 
+    z-index: 30;
+    font-size: 16px;
+}
+main > div p  {
+    font-family: 'Alegreya Sans SC', sans-serif;
+	color: var(--color-text);
+	text-decoration: none;
+	max-width: 100%;
+	bottom: 1em;
+    left: 1.7em;
+    font-size: 16px;
+    right: 3em;
+}
+
+}
+
+main section img {
+	background-size: cover;
+	max-width: 70%;
+    display: flex;
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+}
+ section h2 {
+	text-align: center;
+	position: relative;
+    text-shadow: 0.125em 0.125em 0.188em  #1a1919;
+	max-width: 100%;
+	min-width: 1.25em;
+	bottom: 6em;
+
+}
+h1 {
+    position: relative;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+main section a {
+	position: relative;
+	background-color: var(--color-background);
+	color: var(--color-text);
+	padding: 15px 25px;
+	text-decoration: none;
+	max-width: 100%;
+	bottom: 1em;
+    border: 0.09em solid;
+}
+
+main section a:hover {
+	position: relative;
+	background-color: var(--border-bottom);
+	color: var(--color-h2);
+	padding: 0.938em 1.563em;
+	text-decoration: underline;
+
+}
+
+main section a:focus {
+	position: relative;
+	background-color: var(--background-focus);
+	color:var(--color-h2) ;
+	padding: 0.938em 1.563em;
+	text-decoration: wavy;
+
+}
+
+
+
+
