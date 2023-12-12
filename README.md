@@ -16,14 +16,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Auteur:
- Kayane Bouizem
-
+Kayane
   #### Je startniveau:
-  blauw
-
+Blauw
   #### Je focus:
-  responsive
- 
+surface plane  
 </details>
 
 
@@ -36,16 +33,14 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken voor kick-off werkgroep</summary>
 
   ### Je opdracht:
-  link naar de website die je gaat namaken óf de naam/omschrijving van je eigen ontwerp
-  https://www.chanel.com/nl/
-
+www.chanel.com/nl/
   #### Screenshot(s) van de eerste pagina (small screen): 
-  home pagina
-  <img src="readme-images/homepagechanel.jpg" width="375px" alt="omschrijving van de pagina">
+Homepage
+  <img src="readme-images/homepagechanel.jpg" width="375px" alt="home page meerdere images">
 
   #### Screenshot(s) van de tweede pagina (small screen):
-  login pagina 
-  <img src="readme-images/loginpagechanel.jpg" width="375px" alt="omschrijving van de pagina">
+Brillen page
+  <img src="readme-images/2epagina.png" width="375px" alt="omschrijving van de pagina">
  
 </details>
 
@@ -57,36 +52,11 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
   <summary>uitwerken na test in 1e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen:
-  de voiceover las niet alles voor.
+Het ontbreken van  states op de Chanel-website maakt het lastig voor gebruikers om te zien welke elementen klikbaar zijn. Zonder visuele feedback moeten gebruikers zich uitsluitend concentreren op de cursor. Het toevoegen van duidelijkere visuele feedback kan de algehele gebruiksvriendelijkheid van de website verbeteren.
 
-  #### Screenreader
+De website heeft al wel een hoog contrast modus maar geen nacht modus,  de Chanel-website ontbreekt alt tekst op de afbeeldingenen dit vormt een uitdaging voor gebruikers met visuele beperkingen of voor hen die afhankelijk zijn van schermlezers. Zonder de beschrijvende tekst voor afbeeldingen, missen deze gebruikers essentiële informatie over de visuele inhoud van de site. 
 
- De screenreader leest niet alles voor, bijv niet de header en de foto's werden niet beschreven.
   
-kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat je ziet
-
-  #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-  
-
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  <img src="readme-images/IMG_6661.HEIC" width="375px" alt="kleurenblind">
-  alles had een gele gloed
-  <img src="readme-images/IMG_6663.HEIC" width="375px" alt="beperktzicht ">
-  een zwarte vlek in je zicht. je kon een deel niet zien.
-  
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
 
 </details>
 
@@ -98,13 +68,15 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   <summary>uitwerken na afloop 2e werkgroep</summary>
 
   ### de hele pagina: 
-  <img src="readme-images/">
+  <img src="readme-images/breakdown1.png" width="375px" alt="breakdown pagina">
+  <img src="readme-images/breakdown2.png" width="375px" alt="breakdown pagina">
+
 
   ### dynamisch deel (bijv menu): 
-  <img src="readme-images/">
+  <img src="readme-images/chanelmenu.png" width="375px" alt="breakdown van een dynamisch deel">
 
   ### wellicht nog een dynamisch deel (bijv filter): 
-  <img src="readme-images/">
+  <img src="readme-images/chanelfilter.png" width="375px" alt="breakdown van nog een dynamisch deel">
 
 </details>
 
@@ -118,12 +90,13 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   <summary>uitwerken voor 1e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+ Het gebruik van drie CSS-pagina's was verwarrend voor mij in het begin, omdat ik hier niet eerder mee had gewerkt. Het vereiste wat tijd om aan te wennen. Ik heb erg moeite met javascript om het hamburger menu te openen.
 
 
   ### Agenda voor meeting
   samen met je groepje opstellen
 
+  
   | Lisa           | Laura              | Sander            | Kayane           |
   | ---            | ---                | ---               | ---              |
   | nav bar        | 3 buttons stijl    | Margin en padding | Hamburger menu   |
@@ -134,9 +107,8 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - Display none gebuikt waardoor hamburger menu niet werkte
-  - 3 css paginas, 1 algemene pagina
-  - ...
+  - menu werkte niet door z-index
+  
 
 </details>
 
@@ -150,25 +122,23 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   <summary>uitwerken voor 2e voortgang</summary>
 
   ### Stand van zaken
-  hier dit ging goed & dit was lastig (neem ook screenshots op van delen van je website en code)
+  ik heb erg veel moeite met selectoren, vaak werkt het bij mij niet.
+
 
 
   ### Agenda voor meeting
-  samen met je groepje opstellen
-
-  | Lisa           | Laura              | Sander            | Kayane           |
+ | Lisa           | Laura              | Sander             | Kayane           |
   | ---            | ---                | ---               | ---              |
   | animatie       | achtergrond en     | .....             | selectoren       |
   | slide bar in   | afbeeldingen bij h1| .....             | footer           |
   | loop aangeven  | inframe stylen     | ...               | ...              |
 
-
   ### Verslag van meeting
   hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
+  - position sticky op footer
+  - hoe nth of type werkt
+  
 - ...
 
 </details>
@@ -183,30 +153,7 @@ kan opgelost worden met een alt tekst voor de images waar wordt beschreven wat j
   <summary>uitwerken na test in 8e werkgroep</summary>
 
   ### Bevindingen
-  Lijst met je bevindingen die in de test naar voren kwamen (geef ook aan wat er verbeterd is):
-
-  #### Screenreader
-  leest alleen de buttons en linkjes voor als je de tab gebruikt. het leest alles voor als je het selecteerd
- <img src="readme-imagesIMG_7062.HEIC" width="375px">
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Muis en Toetsenbord 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-Leest alleen de buttons en linkjes voor
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Motoriek (shocks, elastiekjes)
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
-
-
-  #### Visueel (brillen, contrast, kleurenblind, dark/light). 
-  Hier korte omschrijving (met indien nodig afbeeldingen)
-
-  Hier een omschrijving van hoe het opgelost kan worden (met indien nodig afbeeldingen)
+ Ik moet nog mijn html validaten, ik moet nog dark mode toevoegen en ik moet een heading toevoegen in mijn section.
 
 </details>
 
@@ -226,21 +173,16 @@ Leest alleen de buttons en linkjes voor
   ### Agenda voor meeting
   samen met je groepje opstellen
 
-  | student 1      | student 2          | student 3    | student 4        |
+  | Kayane  1      | laura              | lisa         | sander           |
   | ---            | ---                | ---          | ---              |
-  | dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-  | en dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
+  | accordion image | en dit             | en ik dit    | en dan ik dat    |
+  |                 | dit als er tijd is | nog een punt | dit wil ik zeker |
   | ...            | ...                | ...          | ...              |
 
 
   ### Verslag van meeting
-  hier na afloop snel de uitkomsten van de meeting vastleggen
 
-  - punt 1
-  - punt 2
-  - nog een punt
-  - ...
-
+  - image in plaats van button gebruiken voor consistency.
 </details>
 
 
@@ -253,19 +195,21 @@ Leest alleen de buttons en linkjes voor
   <summary>uitwerken voor eindgesprek</summary>
 
   ### Je uitkomst - karakteristiek screenshots:
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/pagina1.png" width="375px" alt="uitomst opdracht 1">
+  <img src="readme-images/pagina2.png" width="375px" alt="uitomst opdracht 1">
 
 
   ### Dit ging goed/Heb ik geleerd: 
-  Korte omschrijving met plaatjes
+Ik heb ontdekt hoe ik moet werken met de root selector en heb geleerd hoe je dark mode op een website kunt implementeren. Daarnaast heb ik kennis opgedaan over het creëren van een hamburgermenu met behulp van JavaScript.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="top">
+  <img src="readme-images/darkmode.png" width="375px" alt="top">
+    <img src="readme-images/menu.png" width="375px" alt="top">
 
 
   ### Dit was lastig/Is niet gelukt:
-  Korte omschrijving met plaatjes
+  Ik heb moeite gehad met het realiseren van een volledige uitklapmogelijkheid in de accordion, momenteel kan slechts één sectie tegelijk worden uitgeklapt. Daarnaast heb ik het lastig gevonden om de header van de brillenpagina op dezelfde manier te stylen als die van de homepagina. Een andere uitdaging was het toevoegen van een tweede slider voor optische brillen. het bleek complex om beide sliders op een functionele manier te stylen. Bovendien vond ik het moeilijk om rekening te houden met screenreaders en ervoor te zorgen dat de website goed functioneert voor gebruikers met visuele beperkingen.
 
-  <img src="readme-images/dummy-plaatje.jpg" width="375px" alt="bummer">
+  <img src="readme-images/accordion.png" width="375px" alt="bummer">
 </details>
 
 
@@ -277,10 +221,17 @@ Leest alleen de buttons en linkjes voor
 <details open>
   <summary>continu bijhouden terwijl je werkt</summary>
 
-  Nb. Wees specifiek ('css-tricks' als bron is bijv. niet specifiek genoeg).
 
-  1. bron 1
-  2. bron 2
-  3. ...
+  1. https://www.freecodecamp.org/news/html-button-link-code-examples-how-to-make-html-hyperlinks-using-the-href-attribute-on-tags/
+  2. image slider  https://www.codingnepalweb.com/responsive-image-slider-html-css-javascript/
+  3. heading verstoppen 
+  4. accordion  https://www.youtube.com/watch?v=oCx4gtYe410 
+  5. header scale, nina
+  6. h1 verbergen, bahaa 
+  7. header icons https://fonts.google.com/icons
+  8. images https://chanel.com/nl/
+  9. darkmode https://www.youtube.com/watch?v=9LZGB3OLXNQ&t=193s
+
+
 
 </details>
