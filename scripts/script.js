@@ -1,23 +1,28 @@
-// JavaScript Document
 console.log("hi");
 
 
 
 
 var openKnop = document.querySelector('#button');
-	// var sluitenKnop = document.querySelector('#button');
-	var menu = document.querySelector('#menuitems');
+var menu = document.querySelector('#menuitems');
 
+function openen() {
+  console.log('open');
+  menu.classList.toggle('open');
 
-function openen(){
-  console.log('open')
-	menu.classList.toggle('open');
+  var links = menu.querySelectorAll('a');
+  // tabindex open of dicht 
+  var tabindexValue = menu.classList.contains('open') ? 0 : -1;
+
+  //  tabindex voor elke link
+  links.forEach(function (link) {
+    link.tabIndex = tabindexValue;
+  });
 }
 
+// event listener om het te openen
+openKnop.addEventListener('click', openen);
 
-//eventlisteners
-
-	openKnop.addEventListener('click', openen);
 
 
 // bron: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_mobile_navbar //
@@ -94,3 +99,28 @@ const initSlider = () => {
 
 window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
+
+
+// darkmode
+var icon = document.getElementById("dark");
+icon.onclick = function (){
+	document.body.classList.toggle("dark-theme");
+	if(document.body.classList.contains("dark-theme")){
+		dark.src = "images/sun.png";
+	} else {
+		dark.src = "images/moon.svg";
+	}
+
+}
+
+// high contrast
+var icon = document.getElementById("contrast");
+icon.onclick = function (){
+	document.body.classList.toggle("highcontrast-theme");
+	if(document.body.classList.contains("highcontrast-theme")){
+		contrast.src = "images/hoogcontrastaan.svg";
+	} else {
+		contrast.src = "images/hoogcontrastuit.svg";
+	}
+
+}

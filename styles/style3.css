@@ -5,7 +5,7 @@
   
     --color-link: #000000;
     --color-link-hover: #414141;
-    --color-link-focus: #5e5e5e;
+    --color-link-focus: #363636;
   
    
     --font-size-h2: 1.25em; 
@@ -21,6 +21,7 @@
     --span-color: #000;
     --footer-color: #000;
     --background-focus: #5e5e5e;
+    --img-opacity: opacity(100%);
 
   
   }
@@ -130,11 +131,7 @@
   }
   
   
-  /* .slider-wrapper .slide-button#prev-slide {
-    left: -10px;
-    display: none;
-  } */
-  
+
   .slider-wrapper .slide-button#next-slide {
     right: 0.1em;
   }
@@ -157,6 +154,7 @@
   .slider-wrapper .image-list .image-item {
     width: 325px;
     object-fit: cover;
+    filter: var(--img-opacity);
   }
   
   .container .slider-scrollbar {
@@ -209,7 +207,7 @@
 
 
 
-/* Styles for mobile and tablets */
+/*  mobile  */
 @media only screen and (max-width: 1023px) {
 
 .slider-wrapper .image-list .image-item {
@@ -233,7 +231,7 @@
 
 .slider-wrapper .image-list .image-item .image-caption  {
     position: absolute;
-    bottom: 3em;
+    bottom: 2em;
     left: 0;
     right: 0;
     color: var(--color-text);
@@ -254,11 +252,12 @@ main > div p  {
 }
 
 }
-
+/*  main section */
 main section img {
 	background-size: cover;
 	max-width: 70%;
-    display: flex;
+  display: flex;
+  filter: var(--img-opacity);
 }
 
 main section {
@@ -271,7 +270,7 @@ main section {
  section h2 {
 	text-align: center;
 	position: relative;
-    text-shadow: 0.125em 0.125em 0.188em  #1a1919;
+    text-shadow: 0.125em 0.125em 0.1em  #1a1919;
 	max-width: 100%;
 	min-width: 1.25em;
 	bottom: 6em;
@@ -298,7 +297,7 @@ main section a {
 main section a:hover {
 	position: relative;
 	background-color: var(--border-bottom);
-	color: var(--color-h2);
+	color: var(--color-background);
 	padding: 0.938em 1.563em;
 	text-decoration: underline;
 
@@ -312,7 +311,5 @@ main section a:focus {
 	text-decoration: wavy;
 
 }
-
-
 
 

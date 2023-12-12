@@ -1,3 +1,4 @@
+
 :root {
     --color-text: #111;
     --color-background: #f8f8f8;
@@ -19,10 +20,48 @@
     --border-bottom: #000; 
     --span-color: #000;
     --footer-color: #000;
+    --img-filter: invert(0%);
+    --img-opacity: opacity(100%);
+
 
   
   }
-  @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC&family=Encode+Sans+SC:wght@100;200;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Raleway&display=swap');
+
+  .dark-theme{
+    --color-text: #ffffff;
+    --color-background: #000000;
+  
+    --color-link: #ffffff;
+    --color-link-hover: #a7a7a7;
+    --color-link-focus: #b8b8b8;
+  
+
+    --color-h4: #000000;
+    --color-p: #ffffff; 
+    --border-bottom: #ffffff; 
+    --span-color: #ffffff;
+    --footer-color: #343434;
+    --img-filter: invert(100%);
+    --img-opacity: opacity(90%);
+  }
+
+  .highcontrast-theme{
+    --color-text: #ffffff;
+    --color-background: #000000;
+  
+    --color-link: #ffffff;
+    --color-link-hover: #a7a7a7;
+    --color-link-focus: #b8b8b8;
+  
+
+    --color-h4: #000000;
+    --color-p: #ffffff; 
+    --border-bottom: #ffffff; 
+    --span-color: #ffffff;
+    --footer-color: #000000;
+    --img-filter: invert(100%);
+    --img-opacity: opacity(40%);
+  }
   
   body {
     color: var(--color-text);
@@ -97,7 +136,6 @@ nav ul li img {
 	top: 1.5em;
 }
 
-/* mobile navigation menu style */
 header nav {
 	display: flex;
 	flex-direction: column;
@@ -146,7 +184,7 @@ header nav ul li a:visited {
 header nav ul li a:active {
 	color:var(--color-text);
 	font-size: 1.2em;
-  transition: ease-in-out;
+  transition: all 500ms;
 	text-decoration: none;
 	padding: 0.438em 0.813em;
 	border-radius: 0.188em;
@@ -175,10 +213,12 @@ header section {
 
 header img {
 	width: 9em;
+  filter:var(--img-filter);
 }
 
 header ul {
 	display: flex;
+  padding: 0;
 }
 
 header ul li {
@@ -194,7 +234,7 @@ header ul img:hover {
 }
 
 header ul img:focus {
-	width: 1.6em;
+	width: 1.7em;
   border-bottom:0.1em solid var(--border-bottom);
 
 }
@@ -216,7 +256,7 @@ header button {
 
 header button span {
 	display: block;
-	width: 1.875em;
+	width: 1.5em;
 	height: 0.125em;
 	margin-bottom: 0.375em;
 	background:var(--span-color);
@@ -233,7 +273,7 @@ header button span {
 	align-items: center;
 	padding: 0 1.5em;
 }
-
+/*  hamburger */
 .button {
 	display: none;
 	cursor: pointer;
@@ -317,18 +357,14 @@ header button span {
 footer {
 	background-color: var(--footer-color);
 	min-width: 1.25em;
-	margin-bottom: 1.25em;
-	flex-basis: 30%;
 	text-align: center;
-	position: sticky;
-	bottom: 0;
-  z-index: 100;
+	
 }
 footer ul {
   display: flex;
-  flex-direction: column; /* Set to column */
+  flex-direction: column;
   list-style-type: none;
-  padding: 0; /* Remove default padding */
+  padding: 0; 
 }
 
 footer ul li {
@@ -338,7 +374,7 @@ footer ul li {
 }
 
 footer ul li a {
-	color: var(--color-h2);
+  color: #ffffff;
 	font-size: 0.95em;
 	text-decoration: none;
 	border-radius:  0.188em;
@@ -347,7 +383,7 @@ footer ul li a {
   padding: 1.25em 1.25em;
 }
 footer ul li a:hover {
-	color: var(--color-h2);
+  color: #ffffff;
 	font-size: 0.95em;
 	text-decoration: underline;
 	border-radius: 0.188em;
@@ -356,7 +392,7 @@ footer ul li a:hover {
   padding: 1.25em 1.25em;
 }
 footer ul li a:visited {
-	color: var(--color-h2);
+  color: #ffffff;
 	font-size: 0.95em;
 	text-decoration: none;
 	border-radius:  0.188em;
@@ -365,7 +401,7 @@ footer ul li a:visited {
   padding: 1.25em 1.25em;
 
 }footer ul li a:focus {
-	color: var(--color-h2);
+  color: #ffffff;
 	font-size: 0.75em;
 	text-decoration: underline;
 	border-radius: 0.188em;
@@ -374,9 +410,9 @@ footer ul li a:visited {
   padding: 20px 20px;
 
 }footer ul li a:active {
-	color: var(--color-h2);
+  color: #ffffff;
 	font-size: 1.2em;
-  transition: ease-in-out;
+  transition: all 500ms;
 	text-decoration: none;
 	border-radius: 0.188em;
   display: flex;
@@ -387,21 +423,13 @@ footer ul li a:visited {
 footer p {
 	display: flex;
   justify-content: left;
-  color: var(--color-h2);
+  color: #ffffff;
 	margin: 1em;
   font-size: 1.8em;
 }
 
 
-/* .footersection form input[type=text] {
-	border: black;
-	background: rgba(244, 244, 244, 0.253);
-	border-bottom: 1px solid rgb(0, 0, 0);
-	color: rgb(0, 0, 0);
-	font-size: 1em;
-	margin-bottom: 1em;
-	position: relative;
-} */
+/* accordion bron: https://www.youtube.com/watch?v=oCx4gtYe410 */
 
 #accordion article form input[type="text"] {
   width: 80%; 
@@ -410,14 +438,14 @@ footer p {
   border-radius: 0.313em; 
   margin-bottom: 0.625em;
   font-size: 1em; 
-  color: var(--color-text); 
-  background-color: var(--color-background); 
+  color: #000; 
+  background-color: #ffffff; 
 }
 
 
 #accordion article form input[type=text]:focus {
 border: solid 0.188em var(--border-bottom);  
-background-color:var(--footer-color);
+background-color:white;
 border-bottom: 0.188em solid var(--border-bottom);
 
 }
@@ -438,12 +466,12 @@ border-bottom: 0.188em solid var(--border-bottom);
   right: 2em;
   top: 0.2em;
   position: relative;
+
 }
 body > main > section:nth-of-type(2) {
   padding: 2em;
 }
 
-/* accordion bron: https://www.youtube.com/watch?v=oCx4gtYe410 */
 
 #accordion {
 	width: 100%;
@@ -466,7 +494,32 @@ body > main > section:nth-of-type(2) {
 	color: var(--color-text);
   
 }
-
+#accordion li label:hover {
+	padding: 0.625em;
+	font-size: 1.3em;
+	font-weight: bold;
+	cursor: pointer;
+	color: var(--color-text);
+  text-decoration: underline;
+  
+}
+#accordion li label:active {
+	padding: 0.625em;
+	font-size: 1.4em;
+  transition: all 500ms;
+	font-weight: bold;
+	cursor: pointer;
+	color: var(--color-text);
+  
+}
+#accordion li label:visited {
+	padding: 0.625em;
+	font-size: 1.4em;
+	font-weight: bold;
+	cursor: pointer;
+	color: var(--color-text);
+  
+}
 
 #accordion li label span {
 	transform: rotate(180deg);
@@ -495,4 +548,21 @@ body > main > section:nth-of-type(2) {
 	max-height: 12.5em;
 }
 
+
+#dark {
+width: 1.6em;
+cursor: pointer;
+filter: invert(100%);
+}
+
+#contrast {
+  width: 1.6em;
+  cursor: pointer;
+  filter: invert(100%);
+  }
+  
+  #accordion article h4 {
+    position: absolute;
+	left: -10000em;
+}
 
