@@ -209,6 +209,8 @@ Ik heb ontdekt hoe ik moet werken met de root selector en heb geleerd hoe je dar
   ### Dit was lastig/Is niet gelukt:
   Ik heb moeite gehad met het realiseren van een volledige uitklapmogelijkheid in de accordion, momenteel kan slechts één sectie tegelijk worden uitgeklapt. Daarnaast heb ik het lastig gevonden om de header van de brillenpagina op dezelfde manier te stylen als die van de homepagina. Een andere uitdaging was het toevoegen van een tweede slider voor optische brillen. het bleek complex om beide sliders op een functionele manier te stylen. Bovendien vond ik het moeilijk om rekening te houden met screenreaders en ervoor te zorgen dat de website goed functioneert voor gebruikers met visuele beperkingen.
 
+   ### Dit heb ik verbeterd
+  Ik heb de website-accordion verbeterd met details en summary voor een betere structuur. Ik heb buttons gebruikt ipv. alleen afbeekdingen met tap index. de header is aangepast, en het Chanel-font wordt nu gebruikt. Ik heb ul en li gebruikt voor de slider, en onnodige ids zijn verwijderd. Ik heb de documenten namen gegeven voor overzichtelijkheid.
   <img src="readme-images/accordion.png" width="375px" alt="bummer">
 </details>
 
@@ -231,6 +233,7 @@ Ik heb ontdekt hoe ik moet werken met de root selector en heb geleerd hoe je dar
   7. header icons https://fonts.google.com/icons
   8. images https://chanel.com/nl/
   9. darkmode https://www.youtube.com/watch?v=9LZGB3OLXNQ&t=193s
+  10. font https://chanel.com/nl/
 
 
 
