@@ -1,0 +1,515 @@
+@font-face {
+	font-family: 'ABChanelCorpo2022-Light';
+	src: url('font/ABChanelCorpo2022-Light.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+
+  }
+  
+:root {
+    --color-text: #111;
+    --color-background: #f8f8f8;
+  
+    --color-link: #000000;
+    --color-link-hover: #414141;
+    --color-link-focus: #5e5e5e;
+  
+   
+    --font-size-h2: 1.25em; 
+    --font-size-h3: 1.875em; 
+    --font-size-h4: 1.25em;
+    --font-size-p: 1em; 
+
+    --color-h4: #f8f8f8;
+    --color-p: #000000; 
+    --color-h3: #f8f8f8; 
+    --color-h2: #f8f8f8; 
+    --border-bottom: #000; 
+    --span-color: #000;
+    --footer-color: #000;
+    --img-filter: invert(0%);
+    --img-opacity: opacity(100%);
+
+
+  
+  }
+ 
+  .dark-theme{
+    --color-text: #ffffff;
+    --color-background: #000000;
+  
+    --color-link: #ffffff;
+    --color-link-hover: #a7a7a7;
+    --color-link-focus: #b8b8b8;
+  
+
+    --color-h4: #000000;
+    --color-p: #ffffff; 
+    --border-bottom: #ffffff; 
+    --span-color: #ffffff;
+    --footer-color: #343434;
+    --img-filter: invert(100%);
+    --img-opacity: opacity(90%);
+  }
+
+  .highcontrast-theme{
+    --color-text: #ffffff;
+    --color-background: #000000;
+  
+    --color-link: #ffffff;
+    --color-link-hover: #a7a7a7;
+    --color-link-focus: #b8b8b8;
+  
+
+    --color-h4: #000000;
+    --color-p: #ffffff; 
+    --border-bottom: #ffffff; 
+    --span-color: #ffffff;
+    --footer-color: #000000;
+    --img-filter: invert(100%);
+    --img-opacity: opacity(40%);
+  }
+  
+  body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+    /* font-family: 'Alegreya Sans SC', sans-serif; */
+	font-family: 'ABChanelCorpo2022-Light', sans-serif;
+    width: 100%;	
+  }
+  button,
+summary {
+	cursor: pointer;
+}
+
+  html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+  main {
+    z-index: 10;
+    position: relative;
+    background-color: var( --color-background);
+    overflow: hidden;
+  }
+  
+  h2 {
+    font-size: var(--font-size-h2);
+    color: var(--color-h2);
+  }
+  
+  h3 {
+    font-size: var(--font-size-h3);
+    color: var(--color-h3);
+  }
+  
+  h4 {
+    font-size: var(--font-size-h4);
+    color: var(--color-h4); 
+  }
+  
+  p {
+    font-size: var(--font-size-p);
+    color: var(--color-p); 
+  }
+
+  body {
+    color: var(--color-text);
+    background-color: var(--color-background);
+    /* font-family: 'Alegreya Sans SC', sans-serif; */
+	font-family: 'ABChanelCorpo2022-Light', sans-serif;
+
+  
+  }
+  
+  
+  /* h1 image */
+header h1{
+	position: absolute;
+	left: 7em;
+}
+
+
+
+
+/* navigatie */
+nav button {
+	display: block;
+}
+nav ul li img {
+	width: 1.25em;
+	display: flex;
+	margin-right: 2.5em;
+	position: absolute;
+	top: 1.5em;
+}
+
+header nav {
+	display: flex;
+	flex-direction: column;
+  /* z-index: 3; */
+  /* position: relative; */
+  background-color: var( --color-background);
+} 
+
+header nav li {
+	display: block;
+	margin: 0 ;
+	line-height: 1.875em;
+}
+
+header nav ul {
+	display: none;
+}
+
+header nav ul li {
+	display: inline-block;
+	margin-right: 20px;
+	line-height: 80px;
+}
+
+header nav ul li a {
+	color: var(--color-text);
+	font-size: 1.063em;
+	text-decoration: none;
+	padding: 0.438em 0.813em;
+	border-radius: 0.188em;
+}
+header nav ul li a:hover{
+	color: var(--color-text);
+	font-size: 1.063em;
+	text-decoration: underline;
+	padding: 0.438em 0.813em;
+	border-radius: 0.188em;
+}
+header nav ul li a:visited {
+	color: var(--color-text);
+	font-size: 1.3em;
+	text-decoration: none;
+	padding: 0.438em 0.813em;
+	border-radius: 0.188em;
+}
+header nav ul li a:active {
+	color:var(--color-text);
+	font-size: 1.2em;
+  transition: all 500ms;
+	text-decoration: none;
+	padding: 0.438em 0.813em;
+	border-radius: 0.188em;
+}
+header nav ul li a:focus {
+	color: var(--color-text);
+	font-size: 1.2em;
+  background-color:var(--color-background);
+	text-decoration:underline;
+	padding: 0.438em 0.813em;
+	border-radius: 0.188em;
+}
+/* header */
+header section {
+	display: flex;
+	flex-wrap: nowrap;
+	flex-direction: row;
+	align-items: center;
+	padding: 1.5em;
+	overflow: auto;
+  background-color:var(--color-background);
+	justify-content: space-between;
+}
+
+
+
+header section h1 img {
+  max-width: 50%;
+  width: auto;
+  height: auto;
+  filter: var(--img-filter);
+
+}
+
+header ul {
+	display: flex;
+  padding: 0;
+}
+
+header ul li {
+	list-style-type: none;
+}
+
+header ul img {
+	width: 1.563em;
+}
+header ul img:hover {
+	width: 1.563em;
+  border-bottom:0.1em solid var(--border-bottom);
+}
+
+header ul img:focus {
+	width: 1.7em;
+  border-bottom:0.1em solid var(--border-bottom);
+
+}
+header ul img:active {
+	width: 1.563em;
+  border-bottom:0.1em solid var(--border-bottom);
+
+}
+header ul img:visited {
+	width: 1.560em;
+}
+
+header button {
+	width: 2em;
+	height: 2em;
+	background-color: transparent;
+	border: none;
+}
+
+header button span {
+	display: block;
+	width: 1.5em;
+	height: 0.125em;
+	margin-bottom: 0.375em;
+	background:var(--span-color);
+	z-index: 1;
+
+}
+
+
+
+.navbar {
+	min-height: 4.375em;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 1.5em;
+}
+/*  hamburger */
+.button {
+	display: none;
+	cursor: pointer;
+	margin-right: -17.5em;
+}
+
+.bar {
+	display: block;
+	width: 1.563em;
+	height: 0.188em;
+	margin: 0.313 auto;
+	background-color: var(--span-color);
+}
+
+
+#menuitems.open {
+	left: 0;
+	z-index: 20;
+	background-color: var(--color-background);
+}
+
+@media(max-width:48em) {
+	.button {
+		display: block;
+	}
+
+	.button.active .bar:nth-child(2) {
+		opacity: 0;
+	}
+
+	.button.active .bar:nth-child(1) {
+		transform: translateY(0.5em) rotate(45deg);
+	}
+
+	.button.active .bar:nth-child(3) {
+		transform: translateY(-0.5em) rotate(-45deg);
+	}
+
+	#menuitems {
+		position: absolute;
+		left: -100%;
+		top: 70px;
+		gap: 0;
+		flex-direction: column;
+		width: 100%;
+		transition: 0.3s;
+		display: flex;
+
+
+	}
+
+}
+
+
+@media (min-width:18.75em) {
+	header nav ul {
+		display: inline-block;
+		list-style-type: none;
+		margin-right: 1.875em;
+	}
+
+	header nav label img {
+		display: none;
+		cursor: pointer;
+		width: 9.375em;
+	}
+
+	section h3 {
+		text-align: start;
+		position: absolute;
+		color: var(--color-h3);
+		text-shadow: 0.125em 0.125em 0.188em #1a1919;
+		max-width: 100%;
+		bottom: 1em;
+
+	}
+}
+
+
+/* footer */
+footer {
+	background-color: var(--footer-color);
+	min-width: 1.25em;
+	text-align: center;
+	
+}
+footer ul {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  padding: 0; 
+}
+
+footer ul li {
+	display: inline;
+	margin-right: 50px;
+	line-height: 1em;
+}
+
+footer ul li a {
+  color: #ffffff;
+	font-size: 0.6em;
+	text-decoration: none;
+	border-radius:  0.188em;
+  display: flex;
+  justify-content: left;
+  padding: 1.25em 1.25em;
+}
+footer ul li a:hover {
+  color: #ffffff;
+	font-size: 0.63em;
+	text-decoration: underline;
+	border-radius: 0.188em;
+  display: flex;
+  justify-content: left;
+  padding: 1.25em 1.25em;
+}
+footer ul li a:visited {
+  color: #ffffff;
+	font-size: 0.95em;
+	text-decoration: none;
+	border-radius:  0.188em;
+  display: flex;
+  justify-content: left;
+  padding: 1.25em 1.25em;
+
+}footer ul li a:focus {
+  color: #ffffff;
+	font-size: 0.75em;
+	text-decoration: underline;
+	border-radius: 0.188em;
+  display: flex;
+  justify-content: left;
+  padding: 20px 20px;
+
+}footer ul li a:active {
+  color: #ffffff;
+	font-size: 1.2em;
+  transition: all 500ms;
+	text-decoration: none;
+	border-radius: 0.188em;
+  display: flex;
+  justify-content: left;
+  padding: 1.25em 1.25em;
+}
+
+footer p {
+	display: flex;
+  justify-content: left;
+  color: #ffffff;
+	margin: 1em;
+  font-size: 1em;
+}
+
+
+
+/* uitklap */
+details {
+	margin-bottom: 1em;
+	margin-left: 2.5em;
+  }
+  
+  details summary {
+	cursor: pointer;
+	font-weight: bold;
+  }
+  
+  details form input[type="text"] {
+	width: 60%;
+	padding: 0.625em;
+	border: 0.125em solid var(--border-bottom);
+	border-radius: 0.313em;
+	margin-bottom: 0.625em;
+	font-size: 1em;
+	color: #000;
+	background-color: #ffffff;
+	font-family: 'ABChanelCorpo2022-Light';
+  }
+  
+  details form input[type="text"]:focus {
+	border: solid 0.188em var(--border-bottom);
+	background-color: white;
+	border-bottom: 0.188em solid var(--border-bottom);
+  }
+  details form button[type="button"] {
+	position: relative;
+	padding: 0;
+	border: none;
+	background: none;
+	cursor: pointer;
+	right: 3em;
+  }
+  
+  details form button[type="button"] img {
+	position: relative;
+    width: 2em;
+    height: 2em;
+    display: flex;
+    top: 0.8em;
+  }
+  
+
+
+
+  
+  #accordion article h4 {
+    position: absolute;
+	left: -10000em;
+}
+
+details p {
+	font-size: 0.7em;
+}
+/* darkmode */
+.theme-toggle {
+    width: 1.6em;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.theme-toggle img {
+    width: 100%;
+    height: 100%;
+    filter: invert(100%);
+}
