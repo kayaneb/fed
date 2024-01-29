@@ -171,7 +171,7 @@ header nav ul li {
 
 header nav ul li a {
 	color: var(--color-text);
-	font-size: 1.063em;
+	font-size: 0.9em;
 	text-decoration: none;
 	padding: 0.438em 0.813em;
 	border-radius: 0.188em;
@@ -301,7 +301,7 @@ header button span {
 }
 
 
-#menuitems.open {
+.menuitems.open {
 	left: 0;
 	z-index: 20;
 	background-color: var(--color-background);
@@ -324,7 +324,7 @@ header button span {
 		transform: translateY(-0.5em) rotate(-45deg);
 	}
 
-	#menuitems {
+	.menuitems {
 		position: absolute;
 		left: -100%;
 		top: 70px;

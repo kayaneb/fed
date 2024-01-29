@@ -2,11 +2,10 @@ console.log("hi");
 
 
 
+var openButton = document.querySelector('.toggle-button');
+var menu = document.querySelector('.menuitems');
 
-var openKnop = document.querySelector('#button');
-var menu = document.querySelector('#menuitems');
-
-function openen() {
+function openMenu() {
   console.log('open');
   menu.classList.toggle('open');
 
@@ -21,7 +20,7 @@ function openen() {
 }
 
 // event listener om het te openen
-openKnop.addEventListener('click', openen);
+openButton.addEventListener('click', openMenu);
 
 
 
@@ -37,12 +36,38 @@ const initSlider1 = () => {
     const scrollbarThumb = sliderScrollbar.querySelector(".scrollbar-thumb");
     const maxScrollLeft = imageList.scrollWidth - imageList.clientWidth;
 
-    // Handle scrollbar thumb drag
+    //  scrollbar thumb drag
     scrollbarThumb.addEventListener("mousedown", (e) => {
-        // ... (same as before)
+        const startX = e.clientX;
+        const thumbPosition = scrollbarThumb.offsetLeft;
+        const maxThumbPosition = sliderScrollbar.getBoundingClientRect().width - scrollbarThumb.offsetWidth;
+        
+        //  thumb position on mouse move
+        const handleMouseMove = (e) => {
+            const deltaX = e.clientX - startX;
+            const newThumbPosition = thumbPosition + deltaX;
+
+            //  the scrollbar thumb stays within bounds
+            const boundedPosition = Math.max(0, Math.min(maxThumbPosition, newThumbPosition));
+            const scrollPosition = (boundedPosition / maxThumbPosition) * maxScrollLeft;
+            
+            scrollbarThumb.style.left = `${boundedPosition}px`;
+            imageList.scrollLeft = scrollPosition;
+        }
+
+        // remove event listeners on mouse up
+        const handleMouseUp = () => {
+            document.removeEventListener("mousemove", handleMouseMove);
+            document.removeEventListener("mouseup", handleMouseUp);
+        }
+
+        // add event listeners for drag interaction
+        document.addEventListener("mousemove", handleMouseMove);
+        document.addEventListener("mouseup", handleMouseUp);
     });
 
-    // Slide images according to the slide button clicks
+
+    // slide images according to the slide button clicks
     slideButtons.forEach(button => {
         button.addEventListener("click", () => {
             const direction = button.classList.contains("prev-slide") ? -1 : 1;
@@ -51,27 +76,27 @@ const initSlider1 = () => {
         });
     });
 
-    // Show or hide slide buttons based on scroll position
+    // show or hide slide buttons based on scroll position
     const handleSlideButtons = () => {
         slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
         slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
     };
 
-      // Update scrollbar thumb position based on image scroll
+      // update scrollbar thumb position based on image scroll
       const updateScrollThumbPosition = () => {
         const scrollPosition = imageList.scrollLeft;
         const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
         scrollbarThumb.style.left = `${thumbPosition}px`;
     };
 
-    // Call these two functions when image list scrolls
+    // call these two functions when image list scrolls
     imageList.addEventListener("scroll", () => {
         updateScrollThumbPosition();
         handleSlideButtons();
     });
 };
 
-// Add event listeners for carousel 1
+// add event listeners for carousel 1
 window.addEventListener("resize", initSlider1);
 window.addEventListener("load", initSlider1);
 
